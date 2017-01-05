@@ -1,0 +1,3 @@
+Symbol file /Users/mtear/Projects/TestXNA4/TestXNA4/bin/Debug/TestXNA4.app/Contents/MonoBundle/OpenTK.dll.mdb doesn't match image /Users/mtear/Projects/TestXNA4/TestXNA4/bin/Debug/TestXNA4.app/Contents/MonoBundle/OpenTK.dll
+* Assertion at gc.c:867, condition `finalizer_thread_exited' not met
+

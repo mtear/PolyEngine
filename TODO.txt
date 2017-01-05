@@ -1,0 +1,17 @@
+﻿Circle objects
+Materials - Density and Restitution, related to mass
+Force fields
+Static forces? Force sum vector?
+Layers for components
+Physics engine component outisde of "Game"
+Renderers, Draw function for objects?
+Tag
+Friction pads
+Gravity
+Resize texture to dimensions
+
+Can't move directly from outside, must use a Move function
+
+Sprite renderer for PGO
+
+Remove XNA Dependence!!!!

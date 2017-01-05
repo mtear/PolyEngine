@@ -1,0 +1,158 @@
+Stacktrace:
+
+  at <unknown> <0xffffffff>
+  at (wrapper managed-to-native) System.Environment.Exit (int) <0x00012>
+  at (wrapper runtime-invoke) <Module>.runtime_invoke_void_int (object,intptr,intptr,intptr) <IL 0x00022, 0x000d0>
+  at <unknown> <0xffffffff>
+  at (wrapper managed-to-native) MonoMac.AppKit.NSApplication.NSApplicationMain (int,string[]) <0x00012>
+  at MonoMac.AppKit.NSApplication.Main (string[]) <IL 0x00041, 0x0016f>
+  at TestXNA4.Program.Main (string[]) [0x0001d] in /Users/mtear/Projects/TestXNA4/TestXNA4/Main.cs:25
+  at (wrapper runtime-invoke) <Module>.runtime_invoke_void_object (object,intptr,intptr,intptr) <IL 0x00051, 0x001d2>
+
+Native stacktrace:
+
+	0   libmono-2.0.dylib                   0x028cae46 mono_handle_native_sigsegv + 342
+	1   libmono-2.0.dylib                   0x0291dd11 sigabrt_signal_handler + 145
+	2   libsystem_platform.dylib            0x93a7b79b _sigtramp + 43
+	3   ???                                 0xffffffff 0x0 + 4294967295
+	4   libsystem_c.dylib                   0x9abcdc38 abort + 156
+	5   libmono-2.0.dylib                   0x02a83c21 monoeg_log_default_handler + 129
+	6   libmono-2.0.dylib                   0x02a83d1b monoeg_assertion_message + 107
+	7   libmono-2.0.dylib                   0x029e705f mono_gc_cleanup + 1055
+	8   libmono-2.0.dylib                   0x029de750 mono_runtime_cleanup + 16
+	9   libmono-2.0.dylib                   0x02811532 mini_cleanup + 786
+	10  libmono-2.0.dylib                   0x029de7b9 mono_runtime_quit + 41
+	11  libmono-2.0.dylib                   0x029515a8 ves_icall_System_Environment_Exit + 40
+	12  ???                                 0x109f1614 0x0 + 278861332
+	13  ???                                 0x109f1779 0x0 + 278861689
+	14  libmono-2.0.dylib                   0x02810ef7 mono_jit_runtime_invoke + 951
+	15  libmono-2.0.dylib                   0x029e9b86 mono_runtime_invoke + 150
+	16  libmono-2.0.dylib                   0x028efa5d do_invoke_method + 4589
+	17  libmono-2.0.dylib                   0x028ee45e suspend_current + 654
+	18  libmono-2.0.dylib                   0x028ee5fc suspend_current + 1068
+	19  libmono-2.0.dylib                   0x028eabd3 process_event + 3491
+	20  libmono-2.0.dylib                   0x028ec134 process_breakpoint_inner + 900
+	21  libmono-2.0.dylib                   0x028ebccb debugger_agent_breakpoint_from_context + 267
+	22  ???                                 0x0071a043 0x0 + 7446595
+	23  ???                                 0x109f0d91 0x0 + 278859153
+	24  ???                                 0x0dfffdec 0x0 + 234880492
+	25  ???                                 0x0dff7fd8 0x0 + 234848216
+	26  ???                                 0x0dff6ac8 0x0 + 234842824
+	27  ???                                 0x0dff6418 0x0 + 234841112
+	28  ???                                 0x0dff51aa 0x0 + 234836394
+	29  ???                                 0x0dff4788 0x0 + 234833800
+	30  ???                                 0x0dff3e8c 0x0 + 234831500
+	31  ???                                 0x0dde4ad9 0x0 + 232671961
+	32  ???                                 0x109eeb90 0x0 + 278850448
+	33  ???                                 0x109eeb23 0x0 + 278850339
+	34  ???                                 0x0718bf98 0x0 + 119062424
+	35  ???                                 0x071d3434 0x0 + 119354420
+	36  Foundation                          0x9af6f28e __NSFireTimer + 117
+	37  CoreFoundation                      0x9c584ff6 __CFRUNLOOP_IS_CALLING_OUT_TO_A_TIMER_CALLBACK_FUNCTION__ + 22
+	38  CoreFoundation                      0x9c584aa2 __CFRunLoopDoTimer + 1250
+	39  CoreFoundation                      0x9c58452d __CFRunLoopDoTimers + 349
+	40  CoreFoundation                      0x9c57b421 __CFRunLoopRun + 2113
+	41  CoreFoundation                      0x9c57a976 CFRunLoopRunSpecific + 390
+	42  CoreFoundation                      0x9c57a7db CFRunLoopRunInMode + 123
+	43  HIToolbox                           0x98e502f1 RunCurrentEventLoopInMode + 267
+	44  HIToolbox                           0x98e500f3 ReceiveNextEventCommon + 503
+	45  HIToolbox                           0x98e4feec _BlockUntilNextEventMatchingListInModeWithFilter + 99
+	46  AppKit                              0x944392e2 _DPSNextEvent + 1053
+	47  AppKit                              0x9443885b -[NSApplication _nextEventMatchingEventMask:untilDate:inMode:dequeue:] + 1057
+	48  AppKit                              0x94438432 -[NSApplication nextEventMatchingMask:untilDate:inMode:dequeue:] + 121
+	49  AppKit                              0x9442bb47 -[NSApplication run] + 1063
+	50  AppKit                              0x943f2469 NSApplicationMain + 1630
+	51  ???                                 0x08f82e50 0x0 + 150482512
+	52  ???                                 0x08f82bd0 0x0 + 150481872
+	53  ???                                 0x00776420 0x0 + 7824416
+	54  ???                                 0x007766b3 0x0 + 7825075
+	55  libmono-2.0.dylib                   0x02810ef7 mono_jit_runtime_invoke + 951
+	56  libmono-2.0.dylib                   0x029e9b86 mono_runtime_invoke + 150
+	57  libmono-2.0.dylib                   0x029efb41 mono_runtime_exec_main + 401
+	58  libmono-2.0.dylib                   0x029ef8f8 mono_runtime_run_main + 632
+	59  libmono-2.0.dylib                   0x0288f355 mono_jit_exec + 213
+	60  libmono-2.0.dylib                   0x0289181c mono_main + 8396
+	61  TestXNA4                            0x00002525 main + 2053
+	62  TestXNA4                            0x00001d15 start + 53
+	63  ???                                 0x00000002 0x0 + 2
+
+Debug info from gdb:
+
+(lldb) command source -s 0 '/tmp/mono-gdb-commands.30xZMf'
+Executing commands in '/tmp/mono-gdb-commands.30xZMf'.
+(lldb) process attach --pid 14590
+Process 14590 stopped
+* thread #1: tid = 0x156dfb0, 0x9c99bcee libsystem_kernel.dylib`__wait4 + 10, name = 'tid_160b', queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+    frame #0: 0x9c99bcee libsystem_kernel.dylib`__wait4 + 10
+libsystem_kernel.dylib`__wait4:
+->  0x9c99bcee <+10>: jae    0x9c99bcfe                ; <+26>
+    0x9c99bcf0 <+12>: calll  0x9c99bcf5                ; <+17>
+    0x9c99bcf5 <+17>: popl   %edx
+    0x9c99bcf6 <+18>: movl   0x791032f(%edx), %edx
+
+Executable module set to "/Users/mtear/Projects/TestXNA4/TestXNA4/bin/Debug/TestXNA4.app/Contents/MacOS/TestXNA4".
+Architecture set to: i386-apple-macosx.
+(lldb) thread list
+Process 14590 stopped
+* thread #1: tid = 0x156dfb0, 0x9c99bcee libsystem_kernel.dylib`__wait4 + 10, name = 'tid_160b', queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+  thread #2: tid = 0x156dfd7, 0x9c99b3ea libsystem_kernel.dylib`__psynch_cvwait + 10
+  thread #3: tid = 0x156dfdb, 0x9c99c7fa libsystem_kernel.dylib`kevent_qos + 10, queue = 'com.apple.libdispatch-manager'
+  thread #4: tid = 0x156e0ca, 0x9c99449a libsystem_kernel.dylib`mach_msg_trap + 10, name = 'com.apple.audio.IOThread.client'
+  thread #5: tid = 0x156e0cd, 0x9c99449a libsystem_kernel.dylib`mach_msg_trap + 10, name = 'com.apple.NSEventThread'
+(lldb) thread backtrace all
+* thread #1: tid = 0x156dfb0, 0x9c99bcee libsystem_kernel.dylib`__wait4 + 10, name = 'tid_160b', queue = 'com.apple.main-thread', stop reason = signal SIGSTOP
+  * frame #0: 0x9c99bcee libsystem_kernel.dylib`__wait4 + 10
+    frame #1: 0x9abed7e0 libsystem_c.dylib`waitpid$UNIX2003 + 48
+    frame #2: 0x028caf0d libmono-2.0.dylib`mono_handle_native_sigsegv(signal=6, ctx=0xbfffb6bc, info=0xbfffb67c) + 541 at mini-exceptions.c:2348 [opt]
+    frame #3: 0x0291dd11 libmono-2.0.dylib`sigabrt_signal_handler(_dummy=<unavailable>, _info=<unavailable>, context=<unavailable>) + 145 at mini-posix.c:218 [opt]
+    frame #4: 0x93a7b79b libsystem_platform.dylib`_sigtramp + 43
+
+  thread #2: tid = 0x156dfd7, 0x9c99b3ea libsystem_kernel.dylib`__psynch_cvwait + 10
+    frame #0: 0x9c99b3ea libsystem_kernel.dylib`__psynch_cvwait + 10
+    frame #1: 0x96fb6538 libsystem_pthread.dylib`_pthread_cond_wait + 757
+    frame #2: 0x96fb8276 libsystem_pthread.dylib`pthread_cond_wait$UNIX2003 + 71
+    frame #3: 0x02a4b2eb libmono-2.0.dylib`thread_func [inlined] mono_os_cond_wait(mutex=0xb00810b0) + 18 at mono-os-mutex.h:105 [opt]
+    frame #4: 0x02a4b2d9 libmono-2.0.dylib`thread_func(thread_data=0x00000000) + 457 at sgen-thread-pool.c:118 [opt]
+    frame #5: 0x96fb5780 libsystem_pthread.dylib`_pthread_body + 138
+    frame #6: 0x96fb56f6 libsystem_pthread.dylib`_pthread_start + 155
+    frame #7: 0x96fb2f7a libsystem_pthread.dylib`thread_start + 34
+
+  thread #3: tid = 0x156dfdb, 0x9c99c7fa libsystem_kernel.dylib`kevent_qos + 10, queue = 'com.apple.libdispatch-manager'
+    frame #0: 0x9c99c7fa libsystem_kernel.dylib`kevent_qos + 10
+    frame #1: 0x900177ea libdispatch.dylib`_dispatch_mgr_invoke + 234
+    frame #2: 0x900173be libdispatch.dylib`_dispatch_mgr_thread + 52
+
+  thread #4: tid = 0x156e0ca, 0x9c99449a libsystem_kernel.dylib`mach_msg_trap + 10, name = 'com.apple.audio.IOThread.client'
+    frame #0: 0x9c99449a libsystem_kernel.dylib`mach_msg_trap + 10
+    frame #1: 0x9c993884 libsystem_kernel.dylib`mach_msg + 68
+    frame #2: 0x943b08ac CoreAudio`HALB_MachPort::SendMessageWithReply(unsigned int, unsigned int, unsigned long, unsigned long, mach_msg_header_t*, bool, unsigned int) + 140
+    frame #3: 0x943a9ab2 CoreAudio`HALB_MachPort::SendSimpleMessageWithSimpleReply(unsigned int, unsigned int, int, int&, bool, unsigned int) + 72
+    frame #4: 0x943a7f20 CoreAudio`HALC_ProxyIOContext::IOWorkLoop() + 1392
+    frame #5: 0x943a7894 CoreAudio`HALC_ProxyIOContext::IOThreadEntry(void*) + 156
+    frame #6: 0x943b39ec CoreAudio`___ZN19HALC_ProxyIOContextC2Emj_block_invoke + 20
+    frame #7: 0x943a77b9 CoreAudio`HALB_IOThread::Entry(void*) + 71
+    frame #8: 0x96fb5780 libsystem_pthread.dylib`_pthread_body + 138
+    frame #9: 0x96fb56f6 libsystem_pthread.dylib`_pthread_start + 155
+    frame #10: 0x96fb2f7a libsystem_pthread.dylib`thread_start + 34
+
+  thread #5: tid = 0x156e0cd, 0x9c99449a libsystem_kernel.dylib`mach_msg_trap + 10, name = 'com.apple.NSEventThread'
+    frame #0: 0x9c99449a libsystem_kernel.dylib`mach_msg_trap + 10
+    frame #1: 0x9c993884 libsystem_kernel.dylib`mach_msg + 68
+    frame #2: 0x9c57bdc6 CoreFoundation`__CFRunLoopServiceMachPort + 214
+    frame #3: 0x9c57b1d1 CoreFoundation`__CFRunLoopRun + 1521
+    frame #4: 0x9c57a976 CoreFoundation`CFRunLoopRunSpecific + 390
+    frame #5: 0x9c57a7db CoreFoundation`CFRunLoopRunInMode + 123
+    frame #6: 0x945a0dde AppKit`_NSEventThread + 291
+    frame #7: 0x96fb5780 libsystem_pthread.dylib`_pthread_body + 138
+    frame #8: 0x96fb56f6 libsystem_pthread.dylib`_pthread_start + 155
+    frame #9: 0x96fb2f7a libsystem_pthread.dylib`thread_start + 34
+(lldb) detach
+
+=================================================================
+Got a SIGABRT while executing native code. This usually indicates
+a fatal error in the mono runtime or one of the native libraries 
+used by your application.
+=================================================================
+
+Process 14590 detached
+(lldb) quit
